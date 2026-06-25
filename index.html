@@ -1,13 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Bearings</title>
 <style>
 :root{--bg:#f4f1ea;--paper:#fbf8f1;--text:#151719;--muted:#6f6a63;--line:#d9d2c5;--accent:#a9653d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
-main{max-width:1120px;margin:0 auto;padding:52px 32px 96px}.logo{font-size:13px;font-weight:700;letter-spacing:.28em;margin-bottom:76px}
-.hero{min-height:86vh;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;animation:hero-arrive 650ms cubic-bezier(.22,1,.36,1) both}@keyframes hero-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+main{max-width:1120px;margin:0 auto;padding:52px 32px 96px}.logo{
+
+  margin-bottom:76px;
+
+}.logo img{
+  height:24px;
+  width:auto;
+  display:block;
+}.hero{min-height:86vh;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;animation:hero-arrive 650ms cubic-bezier(.22,1,.36,1) both}@keyframes hero-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.055em}h1{font-size:clamp(70px,10vw,124px);line-height:.9;margin:0 0 34px}
 .kicker{max-width:620px;font-size:23px;line-height:1.38;color:#393c3b;margin-bottom:32px}.signup-stack{display:flex;flex-direction:column;align-items:flex-start;gap:24px}.signup-stack .beehiiv-embed,.signup-stack .note{margin:0}.cadence{display:flex;gap:10px;align-items:center;border:1px solid var(--line);background:rgba(251,248,241,.75);padding:10px 14px;font-size:14px;color:var(--muted)}.dot{width:4px;height:4px;border-radius:999px;background:var(--accent)}
 .beehiiv-embed{width:100%;max-width:850px;min-height:110px;margin-top:28px;margin-bottom:28px;overflow:visible;display:flex;align-items:center}.note{margin-top:12px;color:var(--muted);font-size:13px}
@@ -20,7 +29,9 @@ h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spac
 </style>
 </head>
 <body><main>
-<div class="logo">BEARINGS</div>
+<div class="logo">
+  <img src="/bearings_wordmark.png" alt="Bearings">
+</div>
 <section class="hero"><div><h1>Find your<br>bearings.</h1><p class="kicker">A weekly publication helping readers understand the forces shaping modern life.</p><div class="signup-stack"><div class="cadence"><span>Weekly</span><span class="dot"></span><span>Every Sunday</span></div><div class="beehiiv-embed"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="fb934aff-c316-4f97-949b-0c4140c10bce"></script></div><div class="note">Enough to stay oriented. Not enough to overwhelm you.</div></div></div>
 <div class="demo"><div class="demo-label">From update to takeaway</div><div class="typebox"><div class="type" id="type"><span id="typed"></span><span class="cursor">|</span></div></div></div></section>
 <section class="section problem"><div><div class="eyebrow">The problem</div><h2>The world is becoming harder to read.</h2></div><div class="copy"><p>Every day brings new headlines, new opinions, new crises and new distractions.</p><p>Most will not matter next year.</p><p>A small number will quietly reshape how we work, what things cost, where we live and what opportunities exist.</p><p>The difficult part is telling the difference.</p></div></section>
